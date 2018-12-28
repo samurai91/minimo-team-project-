@@ -148,7 +148,7 @@ body {
   -webkit-flex-basis: 45%;
   -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
-  padding-top: 130px;
+  margin-top: 130px;
 }
 
 .articles .post_signature {
