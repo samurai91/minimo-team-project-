@@ -1,9 +1,25 @@
 .articles
-  padding: 130px 0
+  padding-bottom: 130px
   &_wrap
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+
+  &-2
+    padding: 103px 0
+
+    &_btn
+      margin: 0 auto
+      margin-top: 165px
+      padding: 22px 34px
+      text-decoration: none
+      color: #626262
+      font-family: "Playfair Display"
+      font-size: 20px
+      font-weight: 400
+      line-height: 24px
+      border: 1px solid #626262
+
 
   .post
     flex-basis: 45%
@@ -27,8 +43,63 @@
       font-weight: 400
       line-height: 24px
 
+    &-2
+      padding-top: 0
+
 .title
   color: #626262
   font-family: "Playfair Display"
   font-size: 30px
   font-weight: 400
+
+  &_dark
+    color: #333333
+    letter-spacing: 0.75px
+
+
+.newsletter
+  padding: 73px 0
+  background-color: #f0f0f0
+  &-wrap
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &-form
+    display: flex
+    width: 400px
+    margin-top: 80px
+    &_input
+      width: 100%
+      max-width: 400px
+      margin-left: 10px
+      border: none
+      background-color: transparent
+      color: #626262
+      font-family: "Playfair Display"
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+      &::placeholder
+        color: #626262
+    &_btn
+      position: relative
+      left: 7px
+      border: none
+      background-color: transparent
+      cursor: pointer
+
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      bottom: -10px
+      left: 50%
+      height: 3px
+      width: 400px
+      transform: translateX(-50%)
+      background-color: rgba(#000000, 0.6)
+      border-radius: 100px
+
+
