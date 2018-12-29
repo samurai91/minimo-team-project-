@@ -53,6 +53,11 @@ header {
 .header-img {
   margin-top: 75px;
 }
+
+.header__descr {
+  margin-left: 81px;
+  margin-top: 95px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -69,13 +74,12 @@ body {
   margin: 0 auto;
 }
 
-.section-title {
+.section-descr {
   color: #b4ad9e;
   font-family: Ubuntu;
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .minimo-text {
@@ -84,12 +88,21 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+
+.title {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
 #photodiary {
-  padding-top: 99px;
+  padding-top: 5px;
 }
 
 .photodiary-weekend {
   margin-top: 24px;
+  margin-bottom: 50px;
 }
 
 .photodiary-weekend__title {
@@ -102,7 +115,7 @@ body {
   margin-top: 30px;
 }
 .articles {
-  padding: 130px 0;
+  padding: 130px 0 120px;
 }
 
 .articles_wrap {
@@ -135,6 +148,10 @@ body {
   text-transform: uppercase;
 }
 
+.articles .post_title {
+  margin-top: 24px;
+}
+
 .articles .post_text {
   margin-top: 34px;
   color: #626262;
@@ -143,10 +160,58 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+#subscription {
+  padding: 74px 0;
+  background: #f0f0f0;
+}
 
-.title {
-  color: #626262;
-  font-family: "Playfair Display";
-  font-size: 30px;
+.subscription {
+  text-align: center;
+}
+
+.subscription__title {
+  margin-bottom: 75px;
+}
+
+.subscription__input {
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  width: 370px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
+}
+
+.subscription__input:focus {
+  outline: none;
+}
+
+.subscription__underline {
+  width: 380px;
+  height: 1px;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.subscription__underline::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #787878;
+  left: 0;
+  top: -1px;
+}
+
+.subscription__underline::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #787878;
+  left: 0;
+  bottom: -1px;
 }
