@@ -1,28 +1,41 @@
-body
-    margin: 0
-    padding: 0
-    font-family: "Playfair Display"
+@import "fonts"
 
-.header-container
-    width: 1061px
-    margin: 0 auto
+body
+  margin: 0
+  padding: 0
+  font-family: "Playfair Display"
 
 .container
-    width: 900px
-    margin: 0 auto
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+
+@media (min-width:576px) 
+  .container 
+    max-width: 540px
+
+@media (min-width:768px)
+  .container
+    max-width: 720px
+
+@media (min-width:992px)
+  .container
+    max-width: 900px
 
 .section-descr
-    color: #b4ad9e
-    font-family: Ubuntu
-    font-size: 14px
-    font-weight: 300
-    text-transform: uppercase
+  color: #b4ad9e
+  font-family: Ubuntu
+  font-size: 14px
+  font-weight: 300
+  text-transform: uppercase
 
 .minimo-text
-    color: #626262
-    font-size: 14px
-    font-weight: 400
-    line-height: 24px
+  color: #626262
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
 
 .title
   color: #626262
@@ -30,3 +43,15 @@ body
   font-size: 30px
   font-weight: 400
   margin: 0
+
+img
+  max-width: 100%
+
+@import "header"
+@import "photodiary"
+@import "post"
+@import "footer"
+@import "media-1200"
+@import "media-991"
+@import "media-768"
+@import "media-576"
