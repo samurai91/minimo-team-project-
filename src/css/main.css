@@ -175,6 +175,23 @@ header {
   border: 1px solid #626262;
 }
 
+.articles-3 {
+  display: none;
+}
+
+.articles-3-enter {
+  opacity: 0;
+  -webkit-transform: translateY(-200px);
+  transform: translateY(-200px);
+}
+
+.articles-3-enter-active {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+}
+
 .articles .post {
   -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
